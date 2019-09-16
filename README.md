@@ -1,8 +1,14 @@
-# IndecommTest
+# Indecomm FrontEnd Developer Angular Test
 
-# Twitter
+Build a web application that consumes the twitter data stream, filters by a user supplied hash tag, and displays average number of tweets per minute as well as a sample of the country code of origin.
+Again, we hope this challenge is interesting and will provoke a higher level of discussion as we continue this process. 
+If you have any constraints in regards to completing this challenge feel free to contact us.
+
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+
+## Installation
+Run `npm install`. 
 
 ## Development server
 

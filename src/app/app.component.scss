@@ -8,22 +8,51 @@
   -moz-osx-font-smoothing: grayscale;
 }
 p:empty{display: none;}
+#content{
+  order: 5;
+  @media screen and (min-width: 575px) {
+    order: 0;
+  }
+}
+#tools--navbar{
+  border-top: 10px solid rgb(47, 51, 54);
+  padding-top: 20px;
+  @media screen and (min-width: 575px) {
+    border-top: 0;
+    margin-top: 0;
+  }
+}
 
+.full-width {
+  width: 100%;
+}
   .content {
     display: grid;
     width: 100%;
+    grid-template-columns: 100%;
+  @media screen and (min-width: 575px) {
     grid-template-columns: 25.3% 41.5% 33.1%;
+  }
+    
     .col-sm-6{
     }
     .col-sm-3{
       border-right: 1px solid rgb(47, 51, 54);
-      padding-left: 100px;
+      padding-left: 0;
+      @media screen and (min-width: 575px) {
+        padding-left: 100px;
+      }
       &:last-of-type{
         border-left: 1px solid rgb(47, 51, 54);
         border-right: 0;
-        padding-left: 30px;
-        padding-right: 96px;
+        padding-left: 20px;
+        padding-right: 20px;
         padding-top: 8px;
+        @media screen and (min-width: 575px) {
+          padding-left: 30px;
+          padding-right: 96px;
+        }
+        
 
       }
     }
@@ -48,17 +77,19 @@ mat-icon{
     fill: #888;
   }
   
-  .search-form-field{
+  .search-form{
     width: 100%;
     background: #202327;
     display: flex;
     border-radius: 9999px;
-    padding: 11px 33px 10px 48px;
+    padding: 0 33px 0 48px;
     box-sizing: border-box;
     color: rgb(110, 118, 125);
     font-size: 15px !important;
     line-height: 1.2;      
     border:1px solid transparent;
+    @media screen and (min-width: 575px) {
+    }
 
     &:hover{
       background: transparent;
@@ -71,14 +102,27 @@ mat-icon{
     }
     mat-icon{
       position: absolute;
-      font-size: 20px;
+      font-size: 24px;
       left: -30px;
-      top: -2px;
+      top: 5px;
+      @media screen and (min-width: 575px) {
+        left: -30px;
+        top: -2px;
+        font-size: 20px;
+      }
     }
   }
   .component--header {
-    border-bottom: 1px solid rgb(47, 51, 54);
+
+    border-top: 1px solid rgb(47, 51, 54);
+    border-bottom: 10px solid rgb(47, 51, 54);
     padding: 2px 14px 0px;
+    margin-top: 20px;
+    @media screen and (min-width: 575px) {
+      margin-top: 0;
+      border-top: 0;
+      border-bottom: 10px solid rgb(47, 51, 54);
+    }
     h2{
       line-height: 0.8;
 

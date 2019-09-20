@@ -1,8 +1,8 @@
 # Turing Challenge
 
-This project is a frontend engineer challenge proposed by [Turing.com](Turing.com).
 
-It consists of a simple responsive UI to visualize the last tweets from @makeschool, @newsycombinator and @ycombinator.
+
+It consists of a simple responsive UI to visualize the last tweets from your timele
 
 This project was done using Angular 7 and Bootstrap 4.
 

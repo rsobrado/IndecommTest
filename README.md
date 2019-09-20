@@ -1,33 +1,23 @@
-# Indecomm FrontEnd Developer Angular Test
-### Challenge
-Develop a SPA using Angular 7 that consumes any real time data stream (for examples see https://www.pubnub.com/developers/realtime-data-streams/), performs some aggregation of the data and display the aggregate values on the page.
+# Turing Challenge
 
-Build a web application that consumes the twitter data stream, filters by a user supplied hash tag, and displays average number of tweets per minute as well as a sample of the country code of origin.
-Again, we hope this challenge is interesting and will provoke a higher level of discussion as we continue this process. 
-If you have any constraints in regards to completing this challenge feel free to contact us.
+This project is a frontend engineer challenge proposed by [Turing.com](Turing.com).
 
+It consists of a simple responsive UI to visualize the last tweets from @makeschool, @newsycombinator and @ycombinator.
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.4.
+This project was done using Angular 7 and Bootstrap 4.
 
-## Installation
-Run `npm install`. 
+## Getting started
 
-## Development server
+* First of all, you need to edit the file `config.json` and insert your Twitter API credentials.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+* Next you need to install the project's dependencies. Simply execute `npm install` on your terminal from within the project's directory.
 
-## Code scaffolding
+* After that, lift the internal Twitter API proxy by executing `npm start`. Leave that running for now and open another terminal.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+* The next step is to install the Angular CLI globally. For that, you can execute `npm install -g @angular/cli` (you might need to use `sudo` if you're on Mac or Linux).
 
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+* Wrap it up by executing `ng serve` from within the project's directory and opening [http://localhost:4200/]([http://localhost:4200/]) on your browser.
 
 ## Running unit tests
 
 Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).

@@ -1,0 +1,11 @@
+<h2 mat-dialog-title><mat-icon>settings</mat-icon>Number of Tweets</h2>
+<mat-dialog-content>
+    <mat-form-field class="search-form-field full-width ">
+        <input matInput placeholder="Number of Tweets" type="number" min="1" (change)="changeNumTweets()" [(ngModel)]="numTweets"/>
+    </mat-form-field>
+</mat-dialog-content>
+<mat-dialog-actions>
+  <button mat-raised-button class="danger"(click)="close()"><mat-icon>close</mat-icon>Close</button>
+</mat-dialog-actions>
+
+

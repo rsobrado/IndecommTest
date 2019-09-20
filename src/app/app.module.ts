@@ -1,37 +1,41 @@
 import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
-import { FormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-
-
-import { MatListModule, MatCardModule, MatButtonModule, MatSidenavModule, MatToolbarModule,MatMenuModule, MatIconModule, MatInputModule, MatFormFieldModule} from '@angular/material';
-
+import { CUSTOM_ELEMENTS_SCHEMA, NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { TwitterService } from 'ngx-twitter-api';
+import { MatListModule, MatCardModule, MatButtonModule, MatSidenavModule, MatToolbarModule,MatMenuModule, MatIconModule, MatInputModule, MatFormFieldModule,MatDialogModule} from '@angular/material';
+import { HttpClientModule } from '@angular/common/http';
+import { MyDialogComponent } from './my-dialog/my-dialog.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { FormsModule } from '@angular/forms';
+
+import { FilterPipe} from './filter.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    MyDialogComponent,
+    FilterPipe
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule,
-    HttpClientModule,
-    MatListModule,
-    MatCardModule,
-    MatButtonModule,
-    MatSidenavModule,
     MatToolbarModule,
+    MatCardModule,
+    HttpClientModule,
+    MatDialogModule,
     BrowserAnimationsModule,
-    MatMenuModule,
-    MatIconModule,
-    MatInputModule,
+    FormsModule,
+    MatListModule,  
+    MatButtonModule, 
+    MatSidenavModule, 
+    MatToolbarModule,MatMenuModule, 
+    MatIconModule, 
+    MatInputModule, 
     MatFormFieldModule
   ],
-  providers: [TwitterService], 
+  providers: [],
   bootstrap: [AppComponent],
+  entryComponents: [MyDialogComponent],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA]
 })
 export class AppModule { }

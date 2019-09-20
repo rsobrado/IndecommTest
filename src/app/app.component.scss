@@ -1,4 +1,13 @@
 
+.loading {
+  text-align: center; 
+  img{
+    width: 75px;
+    height: 65px;
+  }
+}
+
+
 :host {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
   font-size: 14px;
@@ -18,22 +27,22 @@
   padding-top: 20px;
   @media screen and (min-width: 575px) {
     border-top: 0;
-    padding-top: 15px;
+    padding-top: 7px;
   }
 }
 .search-form{
+  max-width: 350px;
   width: 100%;
   background: #202327;
   display: flex;
+  overflow: hidden;
   border-radius: 9999px;
-  padding: 2px 33px 5px 48px;
+  padding: 5px 33px 5px 48px;
   box-sizing: border-box;
   color: rgb(110, 118, 125);
   font-size: 15px !important;
   line-height: 1.5;      
   border:1px solid transparent;
-  @media screen and (min-width: 575px) {
-  }
   &:hover{
     background: transparent;
     border:1px solid rgb(23, 191, 99);
@@ -67,24 +76,20 @@
     color: rgba(217,217,217,1.00);
   }
 }
-.card {
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  transition: all 0.2s ease-in-out;
-  line-height: 24px;
-  &-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin-top: 16px;
-  }
-}
 .tweet{
   border-bottom: 1px solid rgb(32, 35, 39);
+  &:hover{
+    background:  rgba(32, 35, 39,0.9);
+  }
   &--container{
     border-top: 10px solid rgb(32, 35, 39);
     box-sizing: border-box;
+    @media screen and (min-width: 575px) {
+      border-top: 0;
+
+      height:  calc(100vh);
+      overflow: scroll;
+    }
   }
   &--data{
     padding: 0 10px;
@@ -95,28 +100,9 @@
     }
   }
 }
-.mat-card {
-  background: transparent !important;
-  color: rgba(217,217,217,1.00) !important;
-  padding: 0;
-  padding: 15px;
-  border-radius: 0;
-  &-avatar{
-    overflow: hidden;
-    width: 47px;
-    height: 47px;
-  }
-  &-content{
-    display: flex;
-  }
-  &-title{
-    font-size: 16px !important;
-    font-weight: 600 !important;
-    margin-bottom: 4px;
-    .subtitle {
-      font-size: 85%;
-      color: rgb(110, 118, 125) !important;
-      font-weight: 400;
-    }
-  }
+.pull-right{
+  text-align: right;
+}
+.mat-raised-button{
+  background-color: darkred;
 }
